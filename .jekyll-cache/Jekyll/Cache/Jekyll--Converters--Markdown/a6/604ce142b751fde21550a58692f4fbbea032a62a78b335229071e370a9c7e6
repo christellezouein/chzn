@@ -1,0 +1,236 @@
+I"�c<p>Faced with the growing number of tools developers use to write and distribute code and the data footprint these leave behind, we decided to have a closer look. And so, ComDaAn analyses said footprint to offer an insight into the inner workings of open source communities and teams of developers.</p>
+
+<p>This article will cover community data analysis in the context of open source development and free software. More specifically, it will seek to introduce ComDaAn and explain the newest additions.</p>
+
+<h2 id="a-little-bit-of-history">A little bit of history</h2>
+
+<p>Paul Adams is a developer renown for his work in the field of free software and his many contributions to the KDE FOSS community. Before retiring from KDE, Adams provided the community with a service in the form of community data visualization using git repositories. To ensure the continuity of the service, Kevin Ottens, libre software craftsman and developer at enioka Haute Couture, decided to take over.</p>
+
+<p>And so, ComDaAn took form as a way of modernizing Paul Adams' scripts while staying true to his vision. That, later on, turned into a complete rewrite with the purpose of creating a solid base for data analytics in general. The project then became a suite of tools to study and analyze community data.</p>
+
+<h2 id="features">Features</h2>
+
+<p>ComDaAn became what it is today thanks to the common effort of multiple developers. It has many features most of which will be explained in what follows.</p>
+
+<h3 id="supported-data-sources">Supported data sources</h3>
+
+<p>To analyze communities, ComDaAn uses git repositories, mailing lists and GitLab issues.</p>
+
+<h4 id="git-repositories">Git Repositories</h4>
+
+<p>Perhaps the most intuitive data source to consider would be git repositories.</p>
+
+<p>Git repositories are a way to store files as well as track the changes that have been made to them. Git is a tool designed to coordinate work between programmers and is currently the one most commonly used by both free software and proprietary software communities alike. So, analyzing their git repositories and thus the products they put forth would be the most direct way to study these communities.</p>
+
+<p>This was the starting point for ComDaAn.</p>
+
+<h4 id="mailing-lists">Mailing Lists</h4>
+
+<p>Mailing lists are a sort of discussion lists or forums where internet user can communicate and discuss certain subjects. Because of the advantages they present over other means of communications, such as the possibility to work offline, that of signing one's emails via GPG or even using a mail client's filtering features, they are commonly used in open source communities</p>
+
+<p>Therefore, analyzing the public mailing lists of an open source community, or even the private mailing lists of a team of developers, offers an insight into the discussion within them as well as their readiness for discussion with both users and developers. It thus seemed appropriate to add this data source to ComDaAn to establish a more complete profile of the community or team studied.</p>
+
+<h4 id="gitlab-issues">GitLab Issues</h4>
+
+<p>Some Git repository managers like GitLab or GitHub offer an issue tracking system (ITS) that manages and maintains lists of issues. Issues consist of work needed to improve a project. Popular amongst developer teams and communities, ITSs have become a tool for software maintenance. Analyzing them therefore allows the scrutiny of this aspect of a project.</p>
+
+<p>Moreover, certain actors of software communities still went unnoticed even with two data sources. Analyzing the issues of a project helps to overcome this problem since it focuses on the lesser known members of the community: those who report bugs (the reporters) and those who discuss them (the commenters).</p>
+
+<p>For these reasons, ComDaAn needed to be expanded to include the analysis and fetching of GitLab issues.</p>
+
+<h3 id="types-of-analyses">Types of Analyses</h3>
+
+<p>There are 5 types of analyses in ComDaAn that a user can perform on the supported data sources: activity, size, network, centrality and response time.</p>
+
+<p>In what follows, the team or community mentioned is formed by the authors of the entries and the project by the data source or sources submitted for analysis. The duration of the project thus becomes equal to the duration of all the entries combined. In addition to that, the results obtained represent the active members of the entity in question and not all the entity.</p>
+
+<h4 id="activity">Activity</h4>
+
+<p>The activity analysis can be seen as a tool that is used to visualize the activity of the members of a community or a team, week by week, for the duration of a certain project. And so, thanks to this type of analysis, it becomes possible to easily identify who has been the most active as well as who hasn't. Indeed, the activity visualization consists of a list of the names of the authors  of commits, messages and/or issues and their activity by week for every week of the duration of said project.</p>
+
+<p>To illustrate let’s consider the following example:</p>
+
+<p>&lt;!DOCTYPE html&gt;</p>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8" />
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-1.4.0.min.js"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="cd658afa-3b7c-4c60-b838-aba78426c1df" data-root-id="1002"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1282">
+          {"f46e8658-da27-45cc-b68d-38ba29768d5e":{"roots":{"references":[{"attributes":{"num_minor_ticks":5,"tickers":[{"id":"1047","type":"AdaptiveTicker"},{"id":"1048","type":"AdaptiveTicker"},{"id":"1049","type":"AdaptiveTicker"},{"id":"1050","type":"DaysTicker"},{"id":"1051","type":"DaysTicker"},{"id":"1052","type":"DaysTicker"},{"id":"1053","type":"DaysTicker"},{"id":"1054","type":"MonthsTicker"},{"id":"1055","type":"MonthsTicker"},{"id":"1056","type":"MonthsTicker"},{"id":"1057","type":"MonthsTicker"},{"id":"1058","type":"YearsTicker"}]},"id":"1013","type":"DatetimeTicker"},{"attributes":{"months":[0,6]},"id":"1057","type":"MonthsTicker"},{"attributes":{"source":{"id":"1036","type":"ColumnDataSource"}},"id":"1041","type":"CDSView"},{"attributes":{},"id":"1060","type":"UnionRenderers"},{"attributes":{"mantissas":[1,2,5],"max_interval":500.0,"num_minor_ticks":0},"id":"1047","type":"AdaptiveTicker"},{"attributes":{},"id":"1058","type":"YearsTicker"},{"attributes":{},"id":"1022","type":"WheelZoomTool"},{"attributes":{},"id":"1059","type":"Selection"},{"attributes":{},"id":"1008","type":"LinearScale"},{"attributes":{"bottom_units":"screen","fill_alpha":{"value":0.5},"fill_color":{"value":"lightgrey"},"left_units":"screen","level":"overlay","line_alpha":{"value":1.0},"line_color":{"value":"black"},"line_dash":[4,4],"line_width":{"value":2},"render_mode":"css","right_units":"screen","top_units":"screen"},"id":"1061","type":"BoxAnnotation"},{"attributes":{},"id":"1025","type":"ResetTool"},{"attributes":{},"id":"1046","type":"DatetimeTickFormatter"},{"attributes":{"callback":null},"id":"1004","type":"DataRange1d"},{"attributes":{"dimension":1,"ticker":{"id":"1018","type":"CategoricalTicker"}},"id":"1020","type":"Grid"},{"attributes":{"data_source":{"id":"1036","type":"ColumnDataSource"},"glyph":{"id":"1038","type":"Rect"},"hover_glyph":null,"muted_glyph":null,"nonselection_glyph":{"id":"1039","type":"Rect"},"selection_glyph":null,"view":{"id":"1041","type":"CDSView"}},"id":"1040","type":"GlyphRenderer"},{"attributes":{"callback":null,"data":{"author_name":["Bruce Banner","Bruce Banner","Bruce Banner","Bruce Banner","Bruce Banner","Bruce Banner","Bruce Banner","Bruce Banner","Bruce Banner","Bruce Banner","Bruce Banner","Bruce Banner","Natasha Romanoff","Steve Rogers","Steve Rogers","Steve Rogers","Steve Rogers","Steve Rogers","Steve Rogers","Steve Rogers","Steve Rogers","Steve Rogers","Steve Rogers","Steve Rogers","Tony Stark","Tony Stark"],"count":[1,2,5,1,3,5,1,2,1,1,6,1,9,3,3,5,8,6,1,1,9,8,3,6,2,1],"date":{"__ndarray__":"AAAA9KwbdkIAAEC87R12QgAAgIQuIHZCAACApTEpdkIAAAA2sy12QgAAgAg7RHZCAADA0HtGdkIAAECCAFR2QgAAwH2ku3ZCAADAnqfEdkIAAACI6892QgAAAOv06nZCAABAggBUdkIAAACI6892QgAAQFAs0nZCAADA4K3WdkIAAACp7th2QgAAQHEv23ZCAADAAbHfdkIAAIBac+Z2QgAAwCK06HZCAAAA6/TqdkIAAECzNe12QgAAwEO38XZCAABAQPpBdkIAAIAIO0R2Qg==","dtype":"float64","shape":[26]},"index":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25],"week_name":["2018-8","2018-9","2018-10","2018-14","2018-16","2018-26","2018-27","2018-33","2019-27","2019-31","2019-36","2019-48","2018-33","2019-36","2019-37","2019-39","2019-40","2019-41","2019-43","2019-46","2019-47","2019-48","2019-49","2019-51","2018-25","2018-26"]},"selected":{"id":"1059","type":"Selection"},"selection_policy":{"id":"1060","type":"UnionRenderers"}},"id":"1036","type":"ColumnDataSource"},{"attributes":{"active_drag":"auto","active_inspect":"auto","active_multi":null,"active_scroll":{"id":"1022","type":"WheelZoomTool"},"active_tap":"auto","tools":[{"id":"1021","type":"PanTool"},{"id":"1022","type":"WheelZoomTool"},{"id":"1023","type":"BoxZoomTool"},{"id":"1024","type":"SaveTool"},{"id":"1025","type":"ResetTool"},{"id":"1026","type":"HelpTool"},{"id":"1034","type":"HoverTool"}]},"id":"1027","type":"Toolbar"},{"attributes":{},"id":"1018","type":"CategoricalTicker"},{"attributes":{"base":24,"mantissas":[1,2,4,6,8,12],"max_interval":43200000.0,"min_interval":3600000.0,"num_minor_ticks":0},"id":"1049","type":"AdaptiveTicker"},{"attributes":{},"id":"1024","type":"SaveTool"},{"attributes":{"base":60,"mantissas":[1,2,5,10,15,20,30],"max_interval":1800000.0,"min_interval":1000.0,"num_minor_ticks":0},"id":"1048","type":"AdaptiveTicker"},{"attributes":{"overlay":{"id":"1061","type":"BoxAnnotation"}},"id":"1023","type":"BoxZoomTool"},{"attributes":{"ticker":{"id":"1013","type":"DatetimeTicker"}},"id":"1016","type":"Grid"},{"attributes":{"days":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31]},"id":"1050","type":"DaysTicker"},{"attributes":{"callback":null,"factors":["Steve Rogers","Natasha Romanoff","Tony Stark","Bruce Banner"]},"id":"1006","type":"FactorRange"},{"attributes":{"days":[1,4,7,10,13,16,19,22,25,28]},"id":"1051","type":"DaysTicker"},{"attributes":{"formatter":{"id":"1046","type":"DatetimeTickFormatter"},"ticker":{"id":"1013","type":"DatetimeTicker"}},"id":"1012","type":"DatetimeAxis"},{"attributes":{},"id":"1044","type":"CategoricalTickFormatter"},{"attributes":{"formatter":{"id":"1044","type":"CategoricalTickFormatter"},"ticker":{"id":"1018","type":"CategoricalTicker"}},"id":"1017","type":"CategoricalAxis"},{"attributes":{"days":[1,8,15,22]},"id":"1052","type":"DaysTicker"},{"attributes":{"high":9,"low":1,"palette":["#FBFCBF","#FBFABD","#FBF9BB","#FBF7B9","#FCF5B7","#FCF3B5","#FCF1B3","#FCF0B1","#FCEEB0","#FCECAE","#FCEAAC","#FCE8AA","#FCE6A8","#FCE5A6","#FCE3A5","#FDE1A3","#FDDFA1","#FDDD9F","#FDDC9D","#FDDA9C","#FDD89A","#FDD698","#FDD497","#FDD295","#FDD193","#FDCF92","#FDCD90","#FECB8E","#FEC98D","#FEC78B","#FEC689","#FEC488","#FEC286","#FEC085","#FEBE83","#FEBC82","#FEBB80","#FEB97F","#FEB77D","#FEB57C","#FEB37B","#FEB179","#FEAF78","#FEAE76","#FEAC75","#FEAA74","#FEA873","#FEA671","#FDA470","#FDA26F","#FDA16E","#FD9F6C","#FD9D6B","#FD9B6A","#FD9969","#FD9768","#FD9567","#FC9366","#FC9265","#FC9064","#FC8E63","#FC8C63","#FB8A62","#FB8861","#FB8660","#FB8460","#FA825F","#FA805E","#FA7F5E","#F97D5D","#F97B5D","#F9795C","#F8775C","#F8755C","#F7735C","#F7715B","#F6705B","#F66E5B","#F56C5B","#F56A5B","#F4685B","#F3675B","#F3655C","#F2635C","#F1615C","#F0605D","#EF5E5D","#EE5D5D","#EE5B5E","#ED595F","#EC585F","#EB5660","#EA5560","#E85461","#E75262","#E65162","#E55063","#E44E64","#E24D65","#E14C66","#E04B66","#DE4A67","#DD4968","#DC4869","#DA4769","#D9466A","#D7456B","#D6446C","#D4436D","#D3426D","#D1426E","#D0416F","#CE4070","#CD3F70","#CB3E71","#CA3E72","#C83D72","#C63C73","#C53C74","#C33B74","#C23A75","#C03A75","#BE3976","#BD3977","#BB3877","#B93778","#B83778","#B63679","#B53679","#B3357A","#B1357A","#B0347B","#AE347B","#AC337B","#AB337C","#A9327C","#A7317D","#A6317D","#A4307D","#A3307E","#A12F7E","#9F2F7E","#9E2E7E","#9C2E7F","#9A2D7F","#992D7F","#972C7F","#952C80","#942B80","#922B80","#912A80","#8F2A80","#8D2980","#8C2980","#8A2881","#892881","#872781","#852681","#842681","#822581","#812581","#7F2481","#7E2481","#7C2381","#7A2281","#792281","#772181","#762181","#742081","#731F81","#711F81","#6F1E81","#6E1E81","#6C1D80","#6B1C80","#691C80","#681B80","#661A80","#651A80","#63197F","#61187F","#60187F","#5E177F","#5D177E","#5B167E","#5A157E","#58157E","#57147D","#55137D","#53137C","#52127C","#50127B","#4F117B","#4D117A","#4B1079","#4A1079","#481078","#470F77","#450F76","#430F75","#420F74","#400F73","#3E0F72","#3C0F71","#3B0F6F","#390F6E","#370F6C","#350F6A","#341068","#321067","#301065","#2F1062","#2D1060","#2B115E","#2A115C","#281159","#261157","#251155","#231152","#221150","#20114D","#1F114B","#1E1049","#1C1046","#1B1044","#1A1041","#180F3F","#170F3C","#160E3A","#150E38","#140D35","#120D33","#110C31","#100C2F","#0F0B2C","#0E0A2A","#0D0A28","#0C0926","#0B0824","#0A0722","#09071F","#08061D","#07051B","#060519","#050417","#040415","#040313","#030311","#02020F","#02020D","#01010B","#010109","#010007","#000006","#000004","#000003"]},"id":"1001","type":"LinearColorMapper"},{"attributes":{},"id":"1010","type":"CategoricalScale"},{"attributes":{},"id":"1026","type":"HelpTool"},{"attributes":{"days":[1,15]},"id":"1053","type":"DaysTicker"},{"attributes":{"below":[{"id":"1012","type":"DatetimeAxis"}],"center":[{"id":"1016","type":"Grid"},{"id":"1020","type":"Grid"}],"left":[{"id":"1017","type":"CategoricalAxis"}],"renderers":[{"id":"1040","type":"GlyphRenderer"}],"sizing_mode":"stretch_both","title":null,"toolbar":{"id":"1027","type":"Toolbar"},"x_range":{"id":"1004","type":"DataRange1d"},"x_scale":{"id":"1008","type":"LinearScale"},"y_range":{"id":"1006","type":"FactorRange"},"y_scale":{"id":"1010","type":"CategoricalScale"}},"id":"1002","subtype":"Figure","type":"Plot"},{"attributes":{"fill_color":{"field":"count","transform":{"id":"1001","type":"LinearColorMapper"}},"height":{"units":"data","value":1},"line_color":{"field":"count","transform":{"id":"1001","type":"LinearColorMapper"}},"width":{"units":"data","value":604800000},"x":{"field":"date"},"y":{"field":"author_name"}},"id":"1038","type":"Rect"},{"attributes":{"fill_alpha":{"value":0.1},"fill_color":{"value":"#1f77b4"},"height":{"units":"data","value":1},"line_alpha":{"value":0.1},"line_color":{"value":"#1f77b4"},"width":{"units":"data","value":604800000},"x":{"field":"date"},"y":{"field":"author_name"}},"id":"1039","type":"Rect"},{"attributes":{},"id":"1021","type":"PanTool"},{"attributes":{"months":[0,1,2,3,4,5,6,7,8,9,10,11]},"id":"1054","type":"MonthsTicker"},{"attributes":{"callback":null,"tooltips":[["Author","@author_name"],["Week","@week_name"],["Count","@count"]]},"id":"1034","type":"HoverTool"},{"attributes":{"months":[0,2,4,6,8,10]},"id":"1055","type":"MonthsTicker"},{"attributes":{"months":[0,4,8]},"id":"1056","type":"MonthsTicker"}],"root_ids":["1002"]},"title":"Bokeh Application","version":"1.4.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1282').textContent;
+                  var render_items = [{"docid":"f46e8658-da27-45cc-b68d-38ba29768d5e","roots":{"1002":"cd658afa-3b7c-4c60-b838-aba78426c1df"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
+
+<p>Thanks to the above visualization, we can examine the authors that have contributed to the project and the frequency at which they have. And the darker the color, the more active the author has been during the corresponding week.</p>
+
+<h4 id="size">Size</h4>
+
+<p>The size analysis can be seen as a tool that is used to plot the variation of a community's size and activity over the duration of a project. The analysis produces a scatterplot that, thanks to a LOWESS regression, turns into two curves, one representing the number of authors in a community as a function of time and one representing the number of entries in the corresponding project as a function of time.</p>
+
+<p>The resulting visualization would resemble the following:</p>
+
+<p>\&lt;teamsize.html\&gt;</p>
+
+<p>With such a team/community size analysis, it becomes possible to reveal certain patterns that would otherwise have gone unnoticed. For example, an analysis of this type of a mailing list, coupled with that of git repositories of the same team or community, could offer a deeper insight into it by allowing us for example to explore the causality between the growth of a community  and the communication between its developers.</p>
+
+<h4 id="network">Network</h4>
+
+<p>The network analysis is a tool to show the relationships between the different members of a team or community as well as its structure.</p>
+
+<p>To create the graph representing said structure and calculate the centrality of each node or author, we proceed differently for each data source:</p>
+
+<ul>
+  <li>For git repositories, we mainly consider the changes an author made to a set of files and the more said author has modified files a lot of others have modified, or in other words more "popular" files, the larger their weight.</li>
+  <li>For mailing lists, we mainly use the references in a message. And thus, the more a sender has been referenced by different senders, the larger their weight.</li>
+  <li>For GitLab issues, we rely on the the discussion surrounding the issues of a project which entails that the more an author reports bugs and comments on discussion threads, the larger their weight.</li>
+</ul>
+
+<p>An example of a network visualization would be:</p>
+
+<p>\&lt;network.html\&gt;</p>
+
+<h4 id="centrality">Centrality</h4>
+
+<p>Where a network analysis shows the centrality of the different members of a team or a community, a centrality analysis shows the variation of that of an individual author over time. In it, the centrality of an author is calculated similarly to how it is in the network analysis, but instead of considering the duration of the whole project, it considers a smaller interval and calculates the centrality of the author over it. It then repeats the computation over the course of said project. Thus, this type of visualizations displays the variation of the centrality of a member over time. It also displays the activity variation of the author over time and that of size of the community over the same time.</p>
+
+<p>Instead of studying the entity in question at the community or team scale, the centrality analysis allows us to study each member at the author scale and their impact on the team or community.</p>
+
+<p>Indeed:</p>
+
+<p>\&lt;centrality.html\&gt;</p>
+
+<h4 id="response-time">Response time</h4>
+
+<p>Essentially, issues are the support that the creators of a certain software offer to its users. So, the study of the response time of a team to reported bugs and issues offers an insight into the maintenance of said software and the dedication of the team to technical support.</p>
+
+<p>This analysis calculates, on one hand, the duration between the creation of the issue and the start of the discussion around it to plot the variation of the response time over time, and on the other the rate of unanswered issues at each point in time.</p>
+
+<p>More specifically, we obtain a figure, where the curve representing the variation over time of the response time to issues and a bar chart representing the number of unanswered issues.</p>
+
+<p>For example:</p>
+
+<p>\&lt;Response.html\&gt;</p>
+
+<p>We can thus get an idea of the dedication of a community or team to the success of their products after deployment. Subsequently such a visualization can for example help in the choice of new tools to adopt.</p>
+
+<h3 id="interface">Interface</h3>
+
+<p>The ComDaAn user interface has been designed to be efficient and easy to use. It is a hybrid interface and is made up of a script to collect the data sources from the GitLab API and a python library for parsing, analyzing and displaying data.</p>
+
+<p>The library consists of three functions for the parsing of the three different data sources, of five functions for the five different analyses, and of one function to display the results. It mainly uses data frame objects from the python pandas library, making it more universal. It also allows the user to modify these data frames according to their needs as well as to choose the columns they want to use for their analysis. In fact, to use the library, we must specify the data set as well as the columns to be considered when calling each analysis function.</p>
+
+<p>To better illustrate this point, let's consider the following code snippet:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># script.py
+import comdaan as cd
+
+commits = cd.parse_repositories('~/path_to_repositories')
+activity = cd.activity(commits, 'id', 'author_email', 'date')
+cd.display(activity)
+</code></pre></div></div>
+
+<p>Here, we want to perform an activity analysis of some git repositories located at a certain path from the root. We first start by calling the parsing function that corresponds to our data source. That function returns a data frame of the different entries. Then, we call the activity analysis function on the data frame and specify the columns to be considered. Finally, we display our result with the display function. However, to have the authors' email addresses in our final DataFrame instead of their names, we enter the name of the author email column where the function expects the author names. The result then displays the activity per week for individuals whose emails are those found in the dataset.</p>
+
+<p>Indeed:</p>
+
+<p>\&lt;activity_email_addresses.html\&gt;</p>
+
+<p>Moreover, the display function offers many options. It can receive as a parameter a heterogenous list of elements and displays them differently according to their types. It can also receive a simple pandas data frame and display it. Additionally, to better compare two or more results of the same object type, it is possible to display them on the same figure with the same axes. Examining them would have us look at one figure with different plots instead of repeatedly switch between tabs.</p>
+
+<p>To better illustrate, let's consider this time the following code snippet:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># script.py
+import comdaan as cd
+
+commits = cd.parse_repositories('~/path_to_data')
+issues = cd.parse_issues('~/path_to_data')
+commits_ts = cd.teamsize(commits, 'id', 'author_name', 'date')
+issues_ts = cd.teamsize(issues, 'id', 'author', 'created_at')
+cd.display([commits_ts, issues_ts])
+</code></pre></div></div>
+
+<p>Here, we decided to use data from different sources but apply the same analysis to them and then display them at once. The two different figures are then overlayed.</p>
+
+<p>Like so:</p>
+
+<p>\&lt;overlaying_teamsize.html\&gt;</p>
+
+<p>Finally, thanks to the separation of the different stages of the ComDaAn process, it is possible to avoid potential redundancies. Indeed, the parsing which is the most time consuming step of the whole process is done once per data source where it used to be done once for each analysis being called by each script separately, and the display is optimized.</p>
+
+<h2 id="and-now">And now…</h2>
+
+<p>During my four-month internship at enioka, I worked on ComDaAn and more specifically on optimizing the code performance wise, on adding mailing lists and issues as additional data sources, on smoothing methods for the different curves displayed, and finally on the design and programming of the interface.</p>
+
+<p>The ComDaAn project has evolved over time thanks to the work and dedication of many contributors. In the same manner, it will continue to evolve and find new ways to serve community data analytics as well as the open source community.</p>
+:ET
