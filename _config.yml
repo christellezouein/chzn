@@ -3,7 +3,7 @@ title: chzn
 description: >
   I'm a computer engineering student curently based in France. My main areas of interests are Data Science, etc.
 
-baseurl: "www.chzn.fr" # the subpath of your site, e.g. /blog/
+baseurl: "chzn.fr" # the subpath of your site, e.g. /blog/
 url: "https://knhash.github.io" # the base hostname & protocol for your site
 
 author:
