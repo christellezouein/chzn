@@ -4,7 +4,7 @@ description: >
   I'm a computer engineering student curently based in France. My main areas of interests are Data Science, etc.
 
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://knhash.github.io" # the base hostname & protocol for your site
+url: "http://chzn.fr" # the base hostname & protocol for your site
 
 author:
   fullname: Christelle Zouein
