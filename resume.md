@@ -39,7 +39,7 @@ Soeurs des Saints-Coeurs Siouf or SSCC Sioufi for short is a french school in Le
 ## EXPERIENCE
 
 ### Computer engineering internship - **enioka Haute Couture** <span style="float: right; ">September 2019-December 2019</span>  
-During my internship at [enioka Haute Couture](https://haute-couture.enioka.com/), I worked on ComDaAn. ComDaAn previously used git repositories to produce visualization about the corresponding community's activity, size, network and member centrality. My work consisted of adding mailing lists and GitLab issues as additional data sources and the option for an issue response analysis. I also worked on multiprocessing the time consuming operations and on integrating LOWESS regressions for the curves in the project._  
+During my internship at [enioka Haute Couture](https://haute-couture.enioka.com/), I worked on ComDaAn. ComDaAn previously used git repositories to produce visualization about the corresponding community's activity, size, network and member centrality. My work consisted of adding mailing lists and GitLab issues as additional data sources and the option for an issue response analysis. I also worked on multiprocessing the time consuming operations and on integrating LOWESS regressions for the curves in the project.  
 Technologies used: Python (pandas, networkx and bokeh)  
 
 
