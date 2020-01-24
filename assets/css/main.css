@@ -48,6 +48,10 @@
     max-width: 90%;
     margin: 60px auto; }
 
+  .wrapper__content {
+    max-width: 60%;
+    margin: 60px auto; }
+
 /* =Header *//*************************************************************/
   .header {
     overflow: hidden; }
@@ -94,7 +98,7 @@
     text-align: center; }
 
   .page-title__text {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 150%; }
 
   .page-title__subtitle {
@@ -188,6 +192,10 @@
       line-height: 1.6; }
 
     .wrapper {
+      width: 90%;
+      margin: 15px auto; }
+
+    .wrapper__content {
       width: 90%;
       margin: 15px auto; }
 
