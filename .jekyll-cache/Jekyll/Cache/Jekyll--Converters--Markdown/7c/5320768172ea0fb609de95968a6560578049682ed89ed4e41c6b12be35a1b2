@@ -1,0 +1,40 @@
+I"�<h2 id="skills">SKILLS</h2>
+<p><code class="language-plaintext highlighter-rouge">Throughout these past couple of years, I learned how to program in C and C++ and how to handle the trickier aspects of memory managements. I also learned how to program in Java with a couple of projects focused on multithreading and graphical interfaces. Finally, I know Python, with a focus on pandas, bokeh and networkx. And recenlty I've also extended my Python knowledge to Django.</code></p>
+
+<h2 id="projects">PROJECTS</h2>
+<h4 id="comdaan---community-data-analytics---paris-sept-2019-dec-2019"><strong>ComDaAn</strong> - Community Data Analytics - Paris <span style="float: right; ">Sept. 2019-Dec. 2019</span></h4>
+<p>ComDaAn is a suite of tools for conducting analysis from data produced by FOSS communities. This is currently mainly focusing on git repositories</p>
+
+<h4 id="tc---tiger-compiler---paris-2019"><strong>TC</strong> - Tiger Compiler - Paris <span style="float: right; ">2019</span></h4>
+<p>TC is a project done in a group of 4 students. It is a full front end compiler with a lexical, syntactic and semantic analysis of the Tiger language. The lexer and parser for the compiler were written using Flex and Bison and the Ast, binder and type-checker in C++.</p>
+
+<h4 id="42sh---mini-shell-in-c---paris-2018"><strong>42sh</strong> - Mini-shell in C - Paris <span style="float: right; ">2018</span></h4>
+<p>42sh is a project done in a group of 4 students. It is a bash-like shell with Tokenizer and Shell language interpreter written from scratch. It uses multiple syscalls for the interactive shell, script execution and STDIN commands. And it comes with a set of unit tests written with Ceedling.</p>
+
+<h2 id="education">EDUCATION</h2>
+
+<h4 id="epita-sept-2018--july-2021">EPITA <span style="float: right; ">Sept. 2018- July 2021</span></h4>
+<p><strong>Diplôme d’ingénieur</strong><br />
+EPITA or  École Pour les Techniques Avancées is a french computer engineering school. I joined it in the fall of 2018 to study machine learning and data science.</p>
+
+<h4 id="esib-sept-2015--july-2018">ESIB <span style="float: right; ">Sept. 2015- July 2018</span></h4>
+<p><strong>Bac+3</strong><br />
+ESIB or École Supérieur des Ingénieurs de Beyrouth is an engineering school in Lebanon. I joined it in 2015 for my “classes préparatoires” which are mandatory pre-engineering classes in the french system that span over two years. I have also studied computer engineering in ESIB for a year before deciding to move to France and tranfer to EPITA.</p>
+
+<h4 id="soeurs-des-saints-coeurs-sioufi--sept-2000-june-2015">Soeurs des Saints-Coeurs Sioufi  <span style="float: right; ">Sept. 2000-June 2015</span></h4>
+<p><strong>From kindergarten to High School</strong><br />
+Soeurs des Saints-Coeurs Siouf or SSCC Sioufi for short is a french school in Lebanon. It is where I’ve gotten my primary, complementary and secondary education.</p>
+
+<h2 id="experience">EXPERIENCE</h2>
+
+<h4 id="computer-engineering-internship---enioka-haute-couture-sept-2019-dec-2019">Computer engineering internship - <strong>enioka Haute Couture</strong> <span style="float: right; ">Sept. 2019-Dec. 2019</span></h4>
+<p>During my internship at <a href="https://haute-couture.enioka.com/">enioka Haute Couture</a>, I worked on ComDaAn. ComDaAn previously used git repositories to produce visualization about the corresponding community’s activity, size, network and member centrality. My work consisted of adding mailing lists and GitLab issues as additional data sources and the option for an issue response analysis. I also worked on multiprocessing the time consuming operations and on integrating LOWESS regressions for the curves in the project.<br />
+Technologies used: Python (pandas, networkx and bokeh)</p>
+
+<h2 id="extracurricular">Extracurricular</h2>
+
+<ul>
+  <li>EMT in the Lebanese Red Cross.<span style="float: right; ">2017-2018</span></li>
+  <li>MUN delegate and then advisor in the GCLAUMUN.<span style="float: right; ">2014-2018</span></li>
+</ul>
+:ET

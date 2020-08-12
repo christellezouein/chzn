@@ -1,0 +1,323 @@
+I"S<h1 id="comdaan--community-data-analytics">ComDaAn : Community Data Analytics</h1>
+
+<p>Avec l’omniprésence des outils dont se servent les développeurs pour produire du code,
+il est pertinent de s’intéresser à l’empreinte qu’ils laissent. <a href="https://framagit.org/ervin/ComDaAn">ComDaAn</a> exploite
+cette empreinte pour offrir un regard pointu sur les rouages internes des équipes ou
+communautés de développement.</p>
+
+<p>Ses fonctionnalités permettent d’explorer le fonctionnement d’une équipe de
+développement (par exemple en analysant dans le temps les commits faits dans
+un dépôt). Cela se révèle particulièrement utile dans le cadre d’un audit ou
+bien pour sélectionner la brique logicielle qui a les meilleures chances de voir
+sa communauté fonctionner à long terme.</p>
+
+<p>Cet article traitera du sujet de l’analyse de données communautaires dans le cadre du
+développement “open source”. Plus précisément, il visera à faire découvrir le projet
+<a href="https://framagit.org/ervin/ComDaAn">ComDaAn</a>, expliquer les nouveautés qui lui ont été apportées et le situer dans le
+contexte de l’entreprise ainsi que celui du logiciel libre.</p>
+
+<h2 id="un-peu-dhistoire">Un peu d’histoire</h2>
+
+<p>Paul Adams est un développeur reconnu pour ses travaux dans le domaine du logiciel libre
+et ses contributions multiples à la communauté FOSS <a href="https://kde.org">KDE</a>. Avant sa retraite de
+<a href="https://kde.org">KDE</a>, il assurait un service de visualisation du comportement communautaire à partir
+de dépôts git. Pour assurer la continuité de ce service, Kévin Ottens, artisan du logiciel
+libre et développeur chez <a href="https://haute-couture.enioka.com">enioka Haute Couture</a>, décide de prendre le relais. Ainsi naquit
+<a href="https://framagit.org/ervin/ComDaAn">ComDaAn</a>, un projet d’analyse et de visualisations de données communautaires.</p>
+
+<p>D’abord, le projet fut une refonte des scripts de Paul Adams avec pour but de les
+moderniser. Ce qui se transforma par la suite en une réécriture quasi-complète, dans
+l’objectif d’avoir une bonne base pour l’analyse de données, maintenable, fiable et
+utilisable. Enfin, ce projet devint une suite d’outils pour étudier les communautés et
+équipes de développement.</p>
+
+<h2 id="fonctionnalités">Fonctionnalités</h2>
+
+<p><a href="https://framagit.org/ervin/ComDaAn">ComDaAn</a> s’est construit progressivement grâce aux efforts de plusieurs développeurs
+et possède aujourd’hui différentes fonctionnalités qui seront expliquées dans ce qui suit.</p>
+
+<h3 id="sources-de-données-supportées">Sources de données supportées</h3>
+
+<p>Pour pouvoir réaliser son analyse, <a href="https://framagit.org/ervin/ComDaAn">ComDaAn</a> utilise des données produites par les
+développeurs, notamment les dépôts git, les mailing lists et les issues GitLab.</p>
+
+<h4 id="dépôts-git">Dépôts Git</h4>
+
+<p>La source de données la plus intuitive à considérer est sans doute les dépôts git. En
+effet, les dépôts git sont essentiellement un moyen de stocker du code et de conserver
+l’historique des modifications qui lui ont été apportées. Git est aujourd’hui l’outil le
+plus utilisé par les communautés et équipes de développement de logiciels autant libres
+que propriétaires.</p>
+
+<p>Par la suite, analyser leurs dépôts git revient à étudier les produits sur lesquels
+interviennent ces équipes et constitue la manière la plus directe de les examiner. Ce fut
+le point de départ de <a href="https://framagit.org/ervin/ComDaAn">ComDaAn</a>.</p>
+
+<h4 id="mailing-lists">Mailing Lists</h4>
+
+<p>Les “mailing lists” ou listes de diffusion sont une plateforme de discussion permettant
+aux internautes d’échanger sur un certain sujet. Ces dernières demeurent très utilisées
+dans le monde du développement logiciel. Et ceci parce qu’elles présentent des avantages
+par rapport à d’autre moyens de communication comme par exemple, la possibilité de travailler
+en “offline”, de signer ses publications via GPG, d’utiliser des fonctionnalités comme le
+filtrage d’un client email, etc.</p>
+
+<p>Par conséquent, analyser les “mailing lists” publiques d’une communauté, ou les archives
+privées d’une équipe offre un aperçu sur la discussion au sein de l’entité en question ainsi
+que sur sa disposition à la discussion autant avec des utilisateurs qu’avec des développeurs.
+Il nous a donc semblé pertinent d’ajouter cette source de données pour enrichir notre analyse
+et établir un profil plus complet de la communauté ou équipe étudiée.</p>
+
+<h4 id="gitlab-issues">GitLab Issues</h4>
+
+<p>Certaines forges logicielles comme GitLab ou GitHub offrent une fonctionnalité de gestion
+de tickets appelée “issues”. Populaires auprès des équipes et communautés de développement,
+les issues sont devenues une aide au maintien logiciel. Les analyser devient donc pertinent
+pour examiner cet aspect d’un projet.</p>
+
+<p>Par ailleurs, certains acteurs de la communauté nous échappaient toujours, même avec deux
+sources de données. L’analyse des issues nous permet de pallier à ce problème puisqu’elle se
+focalise sur ces membres de la communauté méconnus qui relèvent les bugs (les “reporters”) et
+qui en discutent (les “commenters”).</p>
+
+<p>Pour ces raisons, <a href="https://framagit.org/ervin/ComDaAn">ComDaAn</a> s’est étendu pour comprendre les “issues” GitLab via leur
+collecte et leur analyse.</p>
+
+<h3 id="types-de-visualisations">Types de visualisations</h3>
+
+<p><a href="https://framagit.org/ervin/ComDaAn">ComDaAn</a> regroupe 5 types d’analyses qu’un utilisateur peut réaliser sur les sources
+de données supportées : l’activité, la taille, le réseau, la centralité et la réactivité.</p>
+
+<p>Dans ce qui suit, l’équipe ou communauté mentionnée est formée par les auteurs des entrées
+et le projet par la ou les sources de données soumises à l’analyse. De plus, les résultats
+obtenus représentent les membres actifs de l’entité en question et non l’entité dans son
+intégralité.</p>
+
+<h4 id="activité">Activité</h4>
+
+<p>L’analyse de l’activité permet de visualiser l’activité de chaque membre de l’équipe ou de
+la communauté par semaine pendant la durée du projet. En utilisant le terme “activité”,
+nous entendons ici une représentation du nombres de commits, de mails, d’issues ou de
+commentaires créés par les membres de l’équipe sur la période considérée. Par la suite,
+grâce à ce type de visualisation, nous pouvons identifier qui a été le plus actif. Nous
+pouvons aussi identifier quand un membre entre ou sort de l’équipe ce qui donne une bonne
+idée du recrutement et de la rétention des membres. En effet, elle consiste en une liste
+des noms des auteurs et de leur activité par semaine durant toute la durée du projet.</p>
+
+<iframe src="/assets/activity.html" height="400px" width="100%"></iframe>
+<p><br /></p>
+<div class="tiny" style="text-align: center; font-style: italic">
+Niveau d'activité de chaque membre de l'équipe
+</div>
+<p><br /></p>
+
+<p>Cette visualisation permet d’exprimer l’activité de chaque auteur ayant contribué au projet
+analysé. Plus la couleur est foncée, plus l’auteur a été actif durant la semaine.</p>
+
+<h4 id="taille">Taille</h4>
+
+<p>L’analyse de la taille permet de visualiser l’évolution de la taille d’une communauté ou équipe et
+de son activité au cours du temps. Contrairement à l’analyse précédente qui donnait une vision
+par personne, nous considérons ici l’activité de l’équipe dans son ensemble. En effet, l’analyse
+donne un nuage de points qui grâce à un lissage se transforme en deux courbes représentant le
+nombre d’entrées et le nombre d’auteurs en fonction de la date.</p>
+
+<iframe src="/assets/teamsize.html" height="400px" width="100%"></iframe>
+<p><br /></p>
+<div class="tiny" style="text-align: center; font-style: italic">
+Niveau d'activité de l'équipe et évolution de sa taille
+</div>
+<p><br /></p>
+
+<p>Grâce à une telle visualisation, nous pouvons exposer certains événements qui seraient autrement
+passés inaperçus en se reposant sur l’évolution de la tendance. Dans l’exemple précédent,
+il serait intéressant de se demander ce que le projet a vécu de particulier pour avoir un pic
+d’activité courant 2012.</p>
+
+<p>Cette visualisation est assez simple à lire et un bon guide pour choisir des analyses plus
+précises sur des périodes données. Par exemple, il serait intéressant de regarder le réseau
+de contributeurs (analyse présentée dans la section suivante) du projet ci-dessus avant 2012
+puis courant 2012 pour voir si cela nous éclairerait sur les raisons de ce pic.</p>
+
+<h4 id="réseau">Réseau</h4>
+
+<p>L’analyse du réseau permet d’expliciter les relations entre les différents membres d’une
+équipe ou communauté, ainsi que la structure de celle-ci.</p>
+
+<p>Pour construire le graphe représentant cette structure et calculer la centralité de chacun
+de ses nœuds, nous procédons différemment selon chaque source de données. Pour les dépôts
+git, nous nous basons sur les modifications apportées aux fichiers, et donc plus un
+développeur modifie des fichiers qui ont été modifiés par beaucoup d’autres, plus il a été
+amené à collaborer avec le reste de l’équipe (a minima pour se synchroniser et discuter de
+ces modifications). Il apparaitra alors plus central et inséré dans le réseau des contributeurs.</p>
+
+<p>Alors que pour les mailing lists, nous nous basons sur les références entre mails et donc plus
+une personne est référencée par beaucoup d’autres, plus son poids est important. Enfin, pour les
+issues, nous nous basons sur la discussion autour de ses dernières. Par la suite, plus un
+développeur remonte des bugs et plus il a de commentaires sur un fil de discussion, plus son
+poids est important.</p>
+
+<iframe src="/assets/network.html" height="400px" width="100%"></iframe>
+<p><br /></p>
+<div class="tiny" style="text-align: center; font-style: italic">
+Un réseau de contributeurs
+</div>
+<p><br /></p>
+
+<p>Ainsi il devient facile d’identifier les contributeurs clés d’un projet ou d’une
+communauté sur une période donnée. Typiquement la ou les personnes les plus centrales
+d’un projet sont leurs mainteneurs. Un usage de l’analyse de réseau est donc par exemple
+de la réaliser sur plusieurs périodes distinctes pour voir si le mainteneur a changé.
+Un projet qui survit à un changement de mainteneur indique par exemple une certaine
+résilience.</p>
+
+<h4 id="centralité">Centralité</h4>
+
+<p>L’analyse de réseau permet de visualiser la centralité de chaque membres d’une équipe sur
+une période donnée. L’analyse de la centralité quant à elle, exprime la variation au cours
+du temps de cette même métrique mais pour un auteur donné. Cette analyse calcule de la
+même façon la centralité mais sur des durées plus courtes et répète le calcul itérativement
+jusqu’à couvrir toute la durée du projet. Par la suite la visualisation de la centralité
+permet d’afficher la variation de cette dernière au cours du temps, pour un auteur donné.
+Elle permet aussi d’afficher la variation de l’activité de cet auteur ainsi que celle de la
+taille de sa communauté ou équipe au cours du temps.</p>
+
+<p>Au lieu de montrer l’équipe ou la communauté comme le fait une visualisation de l’activité,
+de la taille ou du réseau, celle de la centralité se concentre sur chaque individu et sur son
+effet sur cette équipe ou communauté.</p>
+
+<iframe src="/assets/centrality.html" height="400px" width="100%"></iframe>
+<p><br /></p>
+<div class="tiny" style="text-align: center; font-style: italic">
+Evolution de la centralité d'un contributeur dans le temps
+</div>
+<p><br /></p>
+
+<p>Il s’agit de la visualisation la plus chère en terme de calculs et la plus difficile à lire.
+En effet, l’amplitude de la variation de la centralité n’est pas la même pour une petite ou
+pour une grande équipe. C’est pourquoi les analyses de tendances de centralité ne sont
+pertinentes que sur des périodes de relative stabilité de la taille d’équipe (d’où
+la troisième courbe dans l’exemple ci-dessus).</p>
+
+<h4 id="réactivité">Réactivité</h4>
+
+<p>Les issues représentent essentiellement le support qu’offrent les créateurs d’un certain
+logiciel à ses utilisateurs et l’étude de la réactivité aux issues permet de visualiser le
+temps que met ce support pour répondre à ceux qui le demandent. Cette analyse utilise alors
+la durée entre la création de l’issue et la première réponse reçue dans la discussion pour
+établir l’évolution du temps de prise en compte d’un côté, et calculer le taux d’issues sans
+réponse d’un autre.</p>
+
+<p>Plus explicitement, on obtient une visualisation, où la courbe exprime l’évolution du temps de
+réponse et l’histogramme le taux d’issues sans réponse.</p>
+
+<iframe src="/assets/response.html" height="400px" width="100%"></iframe>
+<p><br /></p>
+<div class="tiny" style="text-align: center; font-style: italic">
+Evolution du temps de prise en compte des issues
+</div>
+<p><br /></p>
+
+<p>On peut ainsi se faire une idée de l’investissement d’une communauté ou équipe de développement
+quant à la vie de leurs produits après le déploiement. Par la suite une telle visualisation peut
+par exemple aider au choix de technologies et outils à adopter.</p>
+
+<h3 id="interface-de-programmation">Interface de programmation</h3>
+
+<p>L’interface utilisateur de <a href="https://framagit.org/ervin/ComDaAn">ComDaAn</a> a été conçue pour être efficace et utilisable avec
+quelques compétences techniques. Hybride, elle est formée d’un script pour collecter les
+sources de données de l’API GitLab et d’une bibliothèque en Python pour le parsing, l’analyse
+et l’affichage des données.</p>
+
+<p><img src="/assets/comdaan_interface.png" width="700" /><br /></p>
+<div class="tiny" style="text-align: center; font-style: italic">
+Schéma de l'interface de ComDaAn
+</div>
+<p><br /></p>
+
+<p>Cette bibliothèque est formée de trois fonctions pour le parsing des trois sources de données
+différentes, de cinq fonctions pour les cinq analyses, et d’une pour l’affichage. Manipulant
+essentiellement des “<a href="https://pandas.pydata.org/">pandas.DataFrame</a>”, elle permet à l’utilisateur de les modifier selon son
+besoin ainsi que de choisir les colonnes d’intérêt pour son analyse.</p>
+
+<p>En effet, pour utiliser la bibliothèque, nous devons préciser le jeu de données ainsi que les
+colonnes à considérer à l’appel de chaque fonction d’analyse.</p>
+
+<p>Pour mieux illustrer, considérons l’extrait de code suivant :</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># script.py
+</span><span class="kn">import</span> <span class="nn">comdaan</span> <span class="k">as</span> <span class="n">cd</span>
+
+<span class="n">commits</span> <span class="o">=</span> <span class="n">cd</span><span class="p">.</span><span class="n">parse_repositories</span><span class="p">(</span><span class="s">'~/path_to_repositories'</span><span class="p">)</span>
+<span class="n">activity</span> <span class="o">=</span> <span class="n">cd</span><span class="p">.</span><span class="n">activity</span><span class="p">(</span><span class="n">commits</span><span class="p">,</span> <span class="s">'id'</span><span class="p">,</span> <span class="s">'author_email'</span><span class="p">,</span> <span class="s">'date'</span><span class="p">)</span>
+<span class="n">cd</span><span class="p">.</span><span class="n">display</span><span class="p">(</span><span class="n">activity</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>Là, nous voulons réaliser une analyse d’activité des dépôts disponibles à un certain chemin sur
+le disque. Nous avons commencé d’abord par appeler la fonction de parsing correspondant à notre
+source de données qui a retourné une DataFrame contenant les différentes entrées. Ensuite, nous
+avons appelé la fonction d’analyse de l’activité sur la DataFrame retournée en précisant les
+colonnes à considérer.</p>
+
+<p>Enfin nous affichons notre résultat avec la fonction d’affichage. Cependant, pour avoir les
+adresses mail des auteurs dans notre DataFrame finale au lieu de leurs noms, nous avons demandé
+à la fonction d’utiliser la colonne des adresses mail en lui précisant son nom. Notre résultat
+affiche par la suite l’activité par semaine pour les individus dont les mails sont ceux trouvés
+dans le jeu de données.</p>
+
+<iframe src="/assets/activity_email_addresses.html" height="400px" width="100%"></iframe>
+<p><br /></p>
+<div class="tiny" style="text-align: center; font-style: italic">
+Niveau d'activité de chaque adresse email
+</div>
+<p><br /></p>
+
+<p>De plus, l’affichage offre différentes options. En effet, pour plus de facilité, la fonction
+d’affichage peut recevoir des listes d’éléments hétérogènes en entrée et les afficher
+différemment selon leurs types comme elle peut recevoir une DataFrame seule et l’afficher.
+Et pour mieux comparer plusieurs résultats d’un même type d’analyse, nous pouvons les afficher
+sur une même visualisation et puis les examiner au lieu de devoir basculer entre plusieurs vues.</p>
+
+<p>Pour mieux illustrer, considérons, cette fois-ci, l’extrait de code suivant :</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># script.py
+</span><span class="kn">import</span> <span class="nn">comdaan</span> <span class="k">as</span> <span class="n">cd</span>
+
+<span class="n">commits</span> <span class="o">=</span> <span class="n">cd</span><span class="p">.</span><span class="n">parse_repositories</span><span class="p">(</span><span class="s">'~/path_to_data'</span><span class="p">)</span>
+<span class="n">issues</span> <span class="o">=</span> <span class="n">cd</span><span class="p">.</span><span class="n">parse_issues</span><span class="p">(</span><span class="s">'~/path_to_data'</span><span class="p">)</span>
+<span class="n">commits_ts</span> <span class="o">=</span> <span class="n">cd</span><span class="p">.</span><span class="n">teamsize</span><span class="p">(</span><span class="n">commits</span><span class="p">,</span> <span class="s">'id'</span><span class="p">,</span> <span class="s">'author_name'</span><span class="p">,</span> <span class="s">'date'</span><span class="p">)</span>
+<span class="n">issues_ts</span> <span class="o">=</span> <span class="n">cd</span><span class="p">.</span><span class="n">teamsize</span><span class="p">(</span><span class="n">issues</span><span class="p">,</span> <span class="s">'id'</span><span class="p">,</span> <span class="s">'author'</span><span class="p">,</span> <span class="s">'created_at'</span><span class="p">)</span>
+<span class="n">cd</span><span class="p">.</span><span class="n">display</span><span class="p">([</span><span class="n">commits_ts</span><span class="p">,</span> <span class="n">issues_ts</span><span class="p">])</span>
+</code></pre></div></div>
+
+<p>Là, nous avons décidé d’utiliser des données venant de plusieurs sources différentes mais de leur
+appliquer la même analyse et puis de les afficher en même temps. L’affichage des deux courbes
+différentes se fait par la suite sur une même figure.</p>
+
+<iframe src="/assets/overlaying_teamsize.html" height="400px" width="100%"></iframe>
+<p><br /></p>
+<div class="tiny" style="text-align: center; font-style: italic">
+Niveau d'activité de l'équipe et évolution de sa taille du point de vue des commits et des issues
+</div>
+<p><br /></p>
+
+<p>Enfin grâce à la séparation du parsing, de l’analyse et de l’affichage, nous évitons de
+potentielles redondances. En effet, le parsing qui consiste en l’étape la plus coûteuse de tout
+le processus se fait une fois par source de données, le temps d’exécution global est donc plus
+court.</p>
+
+<h2 id="et-maintenant">Et maintenant…</h2>
+
+<p>Durant mon stage de quatre mois chez <a href="https://haute-couture.enioka.com">enioka Haute Couture</a>, j’ai travaillé sur <a href="https://framagit.org/ervin/ComDaAn">ComDaAn</a>
+et notamment sur l’optimisation de la performance du code, sur l’ajout du support des mailing lists
+et des GitLab issues en tant que sources de données additionnelles, sur l’utilisation de la
+régression <a href="https://en.wikipedia.org/wiki/Local_regression">LOWESS</a> pour le lissage des courbes, et enfin sur la conception et la
+programmation de l’interface.</p>
+
+<p><a href="https://framagit.org/ervin/ComDaAn">ComDaAn</a> s’est construit grâce aux contributions de différents développeurs et c’est ainsi que
+le projet va continuer à évoluer et à trouver de nouveaux moyens pour servir le domaine de l’analyse
+de données communautaires ainsi que la communauté “open source”.</p>
+
+<p><a href="https://chzn.fr/">Christelle Zouein</a></p>
+
+:ET
