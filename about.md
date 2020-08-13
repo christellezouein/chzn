@@ -5,8 +5,22 @@ description: Who I am, in more detail.
 background: '/img/bg-about2.jpg'
 ---
 
+```I'm a computer engineering student in my final year of studies. I am majoring in machine learning and data science (SCIA) at EPITA. I'm currently looking for a 6 months internship starting February.```
+
+
+---
+
 ## SKILLS
-``` Throughout these past couple of years, I learned how to program in C and C++ and how to handle the trickier aspects of memory managements. I also learned how to program in Java with a couple of projects focused on multithreading and graphical interfaces. Finally, I know Python, with a focus on pandas, bokeh and networkx. And recenlty I've also extended my Python knowledge to Django. ```  
+- Python, numpy, pandas, scikit-learn, scikit-image, etc.
+- C/C++/C#
+- Java
+- Django, Jekyll, HTML, CSS, etc.
+- SQL
+- Linux, git, shell scripting, etc.
+- Basic TDD
+- Matlab/Octave
+
+---
 
 ## PROJECTS
 #### **ComDaAn** - Community Data Analytics - Paris <span style="float: right; ">Sept. 2019-Dec. 2019</span>  
@@ -18,6 +32,8 @@ TC is a project done in a group of 4 students. It is a full front end compiler w
 #### **42sh** - Mini-shell in C - Paris <span style="float: right; ">2018</span>  
  42sh is a project done in a group of 4 students. It is a bash-like shell with Tokenizer and Shell language interpreter written from scratch. It uses multiple syscalls for the interactive shell, script execution and STDIN commands. And it comes with a set of unit tests written with Ceedling.
 
+
+---
 
 ## EDUCATION
 
@@ -33,6 +49,7 @@ ESIB or École Supérieur des Ingénieurs de Beyrouth is an engineering school i
 **From kindergarten to High School**  
 Soeurs des Saints-Coeurs Siouf or SSCC Sioufi for short is a french school in Lebanon. It is where I've gotten my primary, complementary and secondary education. 
 
+---
 
 ## EXPERIENCE
 
@@ -40,7 +57,7 @@ Soeurs des Saints-Coeurs Siouf or SSCC Sioufi for short is a french school in Le
 During my internship at [enioka Haute Couture](https://haute-couture.enioka.com/), I worked on ComDaAn. ComDaAn previously used git repositories to produce visualization about the corresponding community's activity, size, network and member centrality. My work consisted of adding mailing lists and GitLab issues as additional data sources and the option for an issue response analysis. I also worked on multiprocessing the time consuming operations and on integrating LOWESS regressions for the curves in the project.  
 Technologies used: Python (pandas, networkx and bokeh)  
 
-
+---
 
 ## Extracurricular
 
