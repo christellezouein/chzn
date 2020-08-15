@@ -11,35 +11,33 @@ form: true
 <form
   action="https://formspree.io/christellezouein@hotmail.com"
   method="POST"
-  id="contactForm"
-  novalidate
 >
 
   <div class="control-group">
     <div class="form-group floating-label-form-group controls">
       <label>Name</label>
-      <input type="text" class="form-control" placeholder="Name" id="name" name="Name" required data-validation-required-message="Please enter your name.">
+      <input type="text" class="form-control" placeholder="Name" id="n" name="Name" required>
       <p class="help-block text-danger"></p>
     </div>
   </div>
   <div class="control-group">
     <div class="form-group floating-label-form-group controls">
       <label>Email Address</label>
-      <input type="email" class="form-control" placeholder="Email Address" id="email" name="Email" required data-validation-required-message="Please enter your email address.">
+      <input type="email" class="form-control" placeholder="Email Address" id="email" name="Email" required>
       <p class="help-block text-danger"></p>
     </div>
   </div>
   <div class="control-group">
     <div class="form-group floating-label-form-group controls">
       <label>Message</label>
-      <textarea rows="5" class="form-control" placeholder="Message" id="message" name="Message" required data-validation-required-message="Please enter a message."></textarea>
+      <textarea rows="5" class="form-control" placeholder="Message" id="message" name="Message" required></textarea>
       <p class="help-block text-danger"></p>
     </div>
   </div>
   <br>
   <div id="success"></div>
   <div class="form-group">
-    <button type="submit" class="btn btn-primary" id="sendMessageButton">Send</button>
+    <button type="submit" class="btn btn-primary" >Send</button>
   </div>
 </form>
 
