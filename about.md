@@ -5,23 +5,23 @@ description: Who I am, in more detail.
 background: '/img/bg-about2.jpg'
 ---
 
-```I'm a computer engineering student in my final year of studies. I am majoring in machine learning and data science (SCIA) at EPITA. I'm currently looking for a 6 months a data science internship starting February.```
+```I'm a computer engineering student in my final year of studies. I am majoring in machine learning and data science (SCIA) at EPITA.```
 
 
 ---
 
 ## SKILLS
-- Python, numpy, pandas, scikit-learn, scikit-image, etc.
-- C/C++/C#
-- Scala
-- Java
-- Basic Spark
+- Python (numpy, pandas, scikit-learn, scikit-image, Tensorflow, Keras, nltk, gensim, etc.)
+- C, C++, Cuda
+- Java, C#
+- Scala, Spark, Kafka
+- SQL, Neo4j
 - Django, Jekyll, HTML, CSS, etc.
-- SQL
-- Linux, git, shell scripting, etc.
+- Linux, Windows
+- Git
 - Basic TDD
-- Matlab/Octave
-- Latex
+- Matlab/octave
+- Latex, Office (Word, Excel, PowerPoint, etc.)
 
 ---
 
@@ -68,6 +68,28 @@ I've completed a **Baccalauréat Scientifique** with a specialty in mathematics,
 #### ComDaAn - Data Analytics <span style="float: right; ">Sept. 2019-Dec. 2019</span>  
 [ComDaAn](https://framagit.org/ervin/ComDaAn) is a suite of tools for analyzing the data produced by FOSS communities. It relies mainly on the pandas, numpy, networkx and bokeh libraries.
 
+#### **Analysis of weak signals in medical reports**  <span style="float: right; ">2020-2021</span>
+In a group of five, for our end of studies project, we worked with French GP practices to create a slotution to cluster medical reports and extract the theme of each cluster. Using their data, we were to come up with different approaches to solve the problem and evaluate them; we were to present the practices with either an efficient solution or the conclusion that an unsupervised approach isn't adapted to the data and issue at hand.
+a
+
+We used a multitude of NLP tools to determine the most efficient approach such as, but not limited to:
+- Text processing: stemming and lemmatization;
+- Embeddings: TF-IDF, Doc2Vec and Word2Vec;
+- Algorithms: LDA, DBSCAN, Agglomerative Clustering and Kmeans.
+
+
+Technologies: Python, pandas, numpy, nltk, gensim, scikit-learn, etc.
+
+### NYPD - Parking violations <span style="float: right; ">2020</span>  
+In a group of five, we were to handle the analysis and storage of millions of NYPD parking tickets. We also simulated drones sending alerts to handle them in real time in a stream and display them on a website we created.
+
+Technologies: Scala, Spark, Kafka, SQL.
+
+### WMH Segmentation challenge <span style="float: right; ">2021</span>  
+In a group of five, we were to use deep learning approaches to segment White Matter Hyperintensities. We implemented the 2D U-Net model in the [Fully Convolutional Network Ensembles
+for White Matter Hyperintensities Segmentation in MR Images](https://arxiv.org/pdf/1802.05203.pdf) paper (ranked second) and evaluated its performance with and without data preproprecing. We also adapted it to a 3D input using convultions at the begining of the network to see how it would affect results.
+
+Technologies: Python, Tensorflow/Keras.
 
 #### **Spell Checker**  <span style="float: right; ">2020</span>
 For a Text Mining and Natural Language class, we implemented, in a group of three, a spell checker **based on a Trie** data structure and using the **Damerau–Levenshtein distance**.
@@ -76,20 +98,19 @@ The search for the results had to happen under **time and memory constraints** w
 Technologies: C++, Python for validation testing, Memory profiling tools, etc.
 
 
-#### Azure ChatBot <span style="float: right; ">2020</span>
+#### **Azure ChatBot** <span style="float: right; ">2020</span>
 Using the various **Congnitive Services on Azure**, in a group of 5 we built a **conversational chatbot** with built-in **Speech-to-Text** and **Text-to-Speech** features.
 It used the NASA FAQs to build a knowledge base to answer questions about space and the climate.
 When the bot couldn't find an answer to a question asked in its knowledge base, it would search for it on the internet.
 
 Tools: The Azure cloud platform with a focus on Azure Cognitive Services (QnAMaker, Azure Bot Service, Azure Speech Service, Azure Search, etc.)
 
-
-### TC - Tiger Compiler <span style="float: right; ">2019</span>  
+### **TC - Tiger Compiler** <span style="float: right; ">2019</span>  
 TC is a project done in a group of 4 students.
 It is a **full front end compiler** with a **lexical, syntactic and semantic analysis** of the Tiger language (a purely pedagogical programming language).
 The lexer and parser for the compiler were written using Flex and Bison and the AST, binder and type-checker in C++.
 
-Technologies: C++, Flex/Bison
+Technologies: C++, Flex/Bison.
 
 ---
 
