@@ -5,8 +5,6 @@ description: Who I am, in more detail.
 background: '/img/bg-about2.jpg'
 ---
 
-<a href="url"><img src="img/cv-photo.jpg" height="auto" width="100" style="border-radius:50%"></a>
-
 ```I'm a computer engineering student in my final year of studies. I am majoring in machine learning and data science (SCIA) at EPITA.```
 
 
