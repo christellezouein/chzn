@@ -5,7 +5,7 @@ description: Who I am, in more detail.
 background: '/img/bg-about2.jpg'
 ---
 
-![img](/img/cv-photo.jpg)
+![img](/img/cv-photo.jpg  =150x)
 
 ```I'm a computer engineering student in my final year of studies. I am majoring in machine learning and data science (SCIA) at EPITA.```
 
