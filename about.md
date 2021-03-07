@@ -69,10 +69,10 @@ I've completed a **Baccalauréat Scientifique** with a specialty in mathematics,
 [ComDaAn](https://framagit.org/ervin/ComDaAn) is a suite of tools for analyzing the data produced by FOSS communities. It relies mainly on the pandas, numpy, networkx and bokeh libraries.
 
 #### **Analysis of weak signals in medical reports**  <span style="float: right; ">2020-2021</span>
-In a group of five, for our end of studies project, we worked with French GP practices to create a slotution to cluster medical reports and extract the theme of each cluster. Using their data, we were to come up with different approaches to solve the problem and evaluate them; we were to present the practices with either an efficient solution or the conclusion that an unsupervised approach isn't adapted to the data and issue at hand.
+In a group of five, for our end of studies project, we worked with French GP practices to create a slotution to **cluster french medical reports** and **extract the theme** of each cluster. Using their data, we were to come up with different approaches to solve the problem and evaluate them; we were to present the practices with either an efficient solution or the conclusion that an unsupervised approach isn't adapted to the data and issue at hand.
 a
 
-We used a multitude of NLP tools to determine the most efficient approach such as, but not limited to:
+We used a **multitude of NLP** tools to determine the most efficient approach such as, but not limited to:
 - Text processing: stemming and lemmatization;
 - Embeddings: TF-IDF, Doc2Vec and Word2Vec;
 - Algorithms: LDA, DBSCAN, Agglomerative Clustering and Kmeans.
@@ -81,13 +81,13 @@ We used a multitude of NLP tools to determine the most efficient approach such a
 Technologies: Python, pandas, numpy, nltk, gensim, scikit-learn, etc.
 
 ### NYPD - Parking violations <span style="float: right; ">2020</span>  
-In a group of five, we were to handle the analysis and storage of millions of NYPD parking tickets. We also simulated drones sending alerts to handle them in real time in a stream and display them on a website we created.
+In a group of five, we were to handle the **analysis and storage** of millions of NYPD parking tickets. We also simulated drones sending alerts to handle them in **real time in a stream** and display them on a **website** we created.
 
 Technologies: Scala, Spark, Kafka, SQL.
 
 ### WMH Segmentation challenge <span style="float: right; ">2021</span>  
-In a group of five, we were to use deep learning approaches to segment White Matter Hyperintensities. We implemented the 2D U-Net model in the [Fully Convolutional Network Ensembles
-for White Matter Hyperintensities Segmentation in MR Images](https://arxiv.org/pdf/1802.05203.pdf) paper (ranked second) and evaluated its performance with and without data preproprecing. We also adapted it to a 3D input using convultions at the begining of the network to see how it would affect results.
+In a group of five, we were to use deep learning approaches to **segment White Matter Hyperintensities**. We implemented the **2D U-Net model** in the [Fully Convolutional Network Ensembles
+for White Matter Hyperintensities Segmentation in MR Images](https://arxiv.org/pdf/1802.05203.pdf) paper (ranked second) and **evaluated its performance** with and without data preproprecing. We also **adapted it to a 3D input** using convultions at the begining of the network to see how it would affect results.
 
 Technologies: Python, Tensorflow/Keras.
 
