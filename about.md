@@ -49,7 +49,7 @@ Technologies used: Python (pandas, numpy, networkx, bokeh, etc.)
 #### EPITA <span style="float: right; ">Sept. 2018- July 2021</span>
 **Diplôme d’ingénieur**  
 [EPITA](https://www.epita.fr/) or  École Pour l'Informatique et les Techniques Avancées is a french computer engineering school. I joined it in 2018 and **graduated in 2021**.
-I'm an **active member in multiple associations** that promote acceptance, openness and multiculturalism.
+I was an **active member in multiple associations** that promote acceptance, openness and multiculturalism.
 
 
 #### ESIB <span style="float: right; ">Sept. 2015- July 2018</span>
