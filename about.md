@@ -24,7 +24,7 @@ background: '/img/bg-about2.jpg'
 - Latex, Office (Word, Excel, PowerPoint, etc.)
 
 ---
-
+<!---
 ## EXPERIENCE
 
 #### Intern at **enioka Haute Couture** <span style="float: right; ">Sept. 2019-Dec. 2019</span>
@@ -40,7 +40,7 @@ Being the only intern working on the project, I benefited from a **fair amount o
 Technologies used: Python (pandas, numpy, networkx, bokeh, etc.)
 
 *More information on my work on the project can be found in my blog post: [Tooling For Community Data Analytics](http://chzn.fr/blog/tooling-for-community-data-analytics) which is about the state of the project after my changes.
-
+-->
 
 ---
 
@@ -48,7 +48,7 @@ Technologies used: Python (pandas, numpy, networkx, bokeh, etc.)
 
 #### EPITA <span style="float: right; ">Sept. 2018- July 2021</span>
 **Diplôme d’ingénieur**  
-[EPITA](https://www.epita.fr/) or  École Pour l'Informatique et les Techniques Avancées is a french computer engineering school. I joined it in 2018 and am **set to graduate in 2021**.
+[EPITA](https://www.epita.fr/) or  École Pour l'Informatique et les Techniques Avancées is a french computer engineering school. I joined it in 2018 and **graduated in 2021**.
 I'm an **active member in multiple associations** that promote acceptance, openness and multiculturalism.
 
 
