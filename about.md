@@ -24,8 +24,46 @@ background: '/img/bg-about2.jpg'
 - Latex, Office (Word, Excel, PowerPoint, etc.)
 
 ---
-<!---
+
 ## EXPERIENCE
+
+
+####  Software Engineer at **SoundHound** <span style="float: right; ">Nov 2021-Present</span>
+I currently work at [SoundHound](https://www.soundhound.com) as a C++ Software Engineer in Natural Language and Intent Understanding on the SoundHound assistant.
+I build, improve and maintain domains people can use in their cars to, among other things, open a window, play music and make a phone call.
+I use C++ (and occasionally Lua), and Object Oriented Programming paradigms to produce clean and efficient code allowing user to receive efficient, accurate and quick responses.
+
+
+####  Data Science Consultant Intern at **enioka Consulting** <span style="float: right; ">Feb. 2021-Aug. 2021</span>
+During my internship at [enioka Consulting](https://consulting.enioka.com/), I worked on optimizing the drying process at an asphalt
+plant using Machine Learning techniques for a client of [enioka](https://consulting.enioka.com/)’s.
+I started by **fetching the data** the client collects in their plants from a MongoDB database, **cleaning** it and **building a dataset**. I also took some time
+to **understand the context of the project**: the asphalt drying process and the physical phenomena happening during it. This part is key if I am to build a model that truly reflects the situation. Then,
+I started doing some **Data Exploration and Analysis**, to further understand
+the process as well as the data-process relationship. During that step and among
+other things, I was able to **isolate and handle the outliers** in my dataset. I was also
+able to **detect the correlations** that exist between the different features which later
+allowed me to select the best ones. In parallel, I was doing some **feature engineering** to create new features for important variables not in the dataset such as
+energy efficiency. After that, I moved on to **building a model**, **training**, and
+**validating** it. I repeated that process multiple times to **test different algorithms** and **select the one meeting the performance threshold** (I had previously
+set) the best. Then, I worked on **optimizing** the selected model. And finally
+I **evaluated** it (on a test dataset) and its ability to solve the optimization problem.
+
+
+I also worked on two other consulting projects for another client, France’s leading pickup point network. The first one consisted of
+**consulting** on the subjects of **Data Architecture and Governance**. The client,
+adopting a data driven approach, needed to migrate towards a more sustainable
+architecture that is better adapted to their data needs. They also needed advice
+on how to organize and manage their data teams.
+The second one consisted of
+**consulting in Data Science** and dealt with another part of the life cycle of a machine learning project : **retraining and optimization** (after deployment). [enioka
+consulting](https://consulting.enioka.com/) had done a Machine Learning project for the client, that predicts resiliating parcel pickup and dropoff points, in 2019. After retraining with the 2020
+data, the model performed worse. I was tasked with investigating the drop in
+performance and testing new approaches to achieve better results. I worked on increasing the confidence in drop off/pickup Point Cancellation Detection model, by rethinking the context and
+changing the training approach. The number of phone calls the could make was lower than the number of point resiliation we were predicting which meant that by limiting myself to phone call capacity of the client (or a bit more), I could sacrifice overall precision and prioritize recall. In other words, I didn't need to detect absolutely all resiliating points (precision), I only needed to detect a limited amount (the amount equal to the number of phone calls the client can make) but with very high confidence (recall). This meant that the client was able to make more meaningful phone calls and thus better capitalize on the practice.
+
+Technologies used: Python (scikit-learn, pandas, numpy, matplotlib, etc.), MongoDB.
+
 
 #### Intern at **enioka Haute Couture** <span style="float: right; ">Sept. 2019-Dec. 2019</span>
 During my internship at [enioka Haute Couture](https://haute-couture.enioka.com/), I was the sole intern working on [ComDaAn](https://framagit.org/ervin/ComDaAn).
@@ -40,7 +78,7 @@ Being the only intern working on the project, I benefited from a **fair amount o
 Technologies used: Python (pandas, numpy, networkx, bokeh, etc.)
 
 *More information on my work on the project can be found in my blog post: [Tooling For Community Data Analytics](http://chzn.fr/blog/tooling-for-community-data-analytics) which is about the state of the project after my changes.
--->
+
 
 ---
 
